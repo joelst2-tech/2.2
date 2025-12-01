@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Writing Tool Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>AI Writing Tool Demo</h1>
+
+  <label for="textInput">Enter text:</label>
+  <input type="text" id="textInput" placeholder="Type your text here">
+  <div id="charCounter">Characters: 0</div>
+
+  <div id="presetButtons">
+    <button class="presetBtn" data-action="fixGrammar">Fix Grammar</button>
+    <button class="presetBtn" data-action="shorten">Shorten</button>
+    <button class="presetBtn" data-action="simplify">Simplify</button>
+  </div>
+
+  <label for="featureSelect">Choose feature:</label>
+  <select id="featureSelect">
+    <option value="rewrite">Rewrite</option>
+    <option value="summarize">Summarize</option>
+    <option value="explain">Explain</option>
+  </select>
+
+  <label for="toneSelect">Choose tone:</label>
+  <select id="toneSelect">
+    <option value="formal">Formal</option>
+    <option value="casual">Casual</option>
+  </select>
+
+  <button id="runBtn">Run</button>
+
+  <div id="resultContainer">
+    <div id="result"></div>
+    <button id="copyBtn">Copy</button>
+  </div>
+
+  <div id="historyPanel">
+    <button id="toggleHistory">History ▼</button>
+    <div id="historyList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
